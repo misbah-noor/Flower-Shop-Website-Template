@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body{
@@ -28,14 +29,11 @@ h1{
     backdrop-filter: blur(6px); 
     box-shadow: 0 2px 4px rgba(93, 25, 25, 0.2);
     font-family:'Times New Roman', Times, serif;
-    /* overflow-x:hidden; */
 }
 
 .carousel-item img{
     width: 100%;
     height: auto;
-    /* object-fit: contain;  */
-    /* overflow-x: hidden; */
  }
 
  .card{
@@ -64,7 +62,202 @@ h1{
     max-height: 360px;
  }
 
+footer{
+    font-family:Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+footer .content{
+   max-width: 1350px;
+   margin: auto;
+   padding: 20px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+footer .content a{
+    color: #333;
+    text-decoration: none;
+}
+
+footer .content .box{
+    width: 33%;
+    transition: all 0.4s ease;
+}
+
+footer .content .topic{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+footer .content .lower .topic{
+    margin: 29px 0 8px 0;
+}
+
+footer .content .lower i{
+    padding-right: 16px;
+    font-size: 18px;
+}
+
+.middle-box{
+    padding-left: 80px;
+}
+
+.middle-box a{
+    line-height: 32px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.middle-box a:hover{
+    color: crimson;
+}
+
+.text1{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    color: #333;
+    background: #fff;
+    border-radius: 5px;  
+    padding-left: 10px;
+    font-size: 17px;
+    border: 2px solid #fff;
+}
+
+.text2{
+    height: 42px;   
+    width: 100%;
+    font-size: 18px;
+    color: #fff;
+    background: crimson;
+    outline: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 10px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease-in-out;
+}
+
+.text2:hover{
+   background: none;
+   color: crimson;
+}
+
+.media-icons a{
+    font-size: 18px;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    display: inline-block;
+    line-height: 43px;
+    border-radius: 5px;
+    border: 2px solid #222222;
+    margin: 30px 5px 0 3px;
+    transition: all 0.3s ease;
+  }
+
+  .media-icons a:hover{
+    color: crimson;
+    border: 2px solid crimson;
+  }
+
+  .bottom{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 10px 125px 0 0;
+    color: #333;
+  }
+  
+  footer .bottom a{
+    text-decoration: none;
+      color: crimson;
+      transition: all 0.3s ease;
+  }
+  
+  .bottom a:hover{
+    color: rgb(239, 5, 102);
+  }
+
  /*Media Queries*/
+
+ @media (max-width:1100px){
+    footer .content .middle-box{
+      padding-left: 0%;
+    }
+  }
+  
+  @media (max-width:975px){
+    footer .content .middle-box{
+      padding-left: 10%;
+      width: 50%;
+      margin-top: 12px;
+    }
+  
+    .bottom{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      margin-left: 12px;
+    }
+  
+    .right-box{
+      margin-right: 42px;
+    }
+  }
+  
+  @media (max-width:820px){
+    .middle-box{
+      margin-left: -5%;
+    }
+  
+    .bottom{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      /* margin-left: 21px; */
+    }
+  }
+  
+  @media (max-width: 735px){
+    .middle-box{
+      margin-left: -7%;
+    }
+  }
+  
+  @media (max-width:720px){
+    .bottom{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  }
+  
+  @media (max-width: 720px){
+    .middle-box{
+      margin-left: -45px
+    }
+    .right-box{
+      margin-top: 15px;
+    }
+  
+    .menu{
+      width: 100%;
+    }
+    .service{
+      width: 100%;
+    }
+    footer{
+      width: 100%;
+    }
+   
+  }
+
  
  @media (max-width: 768px) {
     .navbar-brand {
