@@ -5,12 +5,12 @@
 }
 
 body{
-    overflow-x: hidden;
+    width: 100%;
 }
 
 .navbar-brand{
     font-family: "Dancing Script", cursive;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 
@@ -25,16 +25,17 @@ h1{
 }
 
 .navbar{
-    backdrop-filter: blur(10px); 
-    /* -webkit-backdrop-filter: blur(10px);  */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(6px); 
+    box-shadow: 0 2px 4px rgba(93, 25, 25, 0.2);
     font-family:'Times New Roman', Times, serif;
+    /* overflow-x:hidden; */
 }
 
 .carousel-item img{
-    width: 60%;
-    height: 65vh;
+    width: 100%;
+    height: auto;
     /* object-fit: contain;  */
+    /* overflow-x: hidden; */
  }
 
  .card{
@@ -63,4 +64,18 @@ h1{
     max-height: 360px;
  }
 
+ /*Media Queries*/
+ 
+ @media (max-width: 768px) {
+    .navbar-brand {
+      font-size: 25px;
+    }
+    .nav-link {
+      font-size: 1rem;
+    }
+    .carousel-item img {
+      height: 36vh;
+      width: 30vw;
+    }
+  }
 
